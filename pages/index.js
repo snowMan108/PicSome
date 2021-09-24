@@ -29,7 +29,7 @@ export default function Home({ data }) {
       {/* BODY SECTION */}
       <div className="mt-3 mx-3 flex flex-wrap justify-center px-8">
         {data.map((item, i) => (
-          <PictureItem key={i} item={item} index={i} />
+          <PictureItem key={i} item={item} />
         ))}
       </div>
     </div>
