@@ -18,6 +18,7 @@ export async function getServerSideProps() {
 
 export default function Home({ data }) {
   /* console.log("data", data); */
+
   return (
     <div>
       <Head>
@@ -26,6 +27,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
+
       {/* BODY SECTION */}
       <div className="mt-3 mx-3 flex flex-wrap justify-center px-8">
         {data.map((item, i) => (
