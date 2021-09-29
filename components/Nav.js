@@ -10,7 +10,7 @@ function Nav() {
 
   const router = useRouter();
   const handleCartClick = () => {
-    router.push("/Cartpage");
+    router.push("/cartpage");
   };
 
   const handlePicSomeClick = () => {
