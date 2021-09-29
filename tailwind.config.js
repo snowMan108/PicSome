@@ -8,6 +8,9 @@ module.exports = {
         navBarColor: "#e08b84",
         borderNavColor: "#b5b0b0",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   variants: {
