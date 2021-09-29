@@ -23,38 +23,6 @@ function cartpage() {
       </Head>
       <Nav />
       <CheckoutBody />
-
-      {/* {items.length > 0 ? (
-        <p className="font-bold text-2xl mt-4 ml-3">your shopping basket:</p>
-      ) : (
-        <p className="font-bold text-xl mt-4 ml-3">
-          your shopping basket is empty
-        </p>
-      )}
-
-   
-      {items.map((item, i) => (
-        <CheckoutItem item={item} key={i} />
-      ))}
-
-      {items.length > 0 && (
-        <h2 className="ml-4 mt-4">Total:${itemCost * items.length}</h2>
-      )}
-
-      
-      {items.length > 0 && (
-        <div className="flex justify-center">
-          <div className="w-32 group transtion duration-100 hover:scale-105 cursor-pointer h-10 rounded-full bg-navBarColor flex-row flex justify-center items-center">
-            <p className="text-white group-hover:underline cursor-pointer font-semibold text-sm ">
-              Place order
-            </p>
-          </div>
-        </div>
-      )}
-     
-      <h1 className="font-semibold text-base mt-4 ml-3">
-        Your favorited items:
-      </h1> */}
     </div>
   );
 }

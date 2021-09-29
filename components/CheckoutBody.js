@@ -36,10 +36,8 @@ function CheckoutBody() {
           </div>
         </div>
       )}
-      {/* Your favorited items: */}
-      <h1 className="font-semibold text-base mt-4 ml-3">
-        Your favorited items:
-      </h1>
+      {/* favorited items: */}
+      <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
     </div>
   );
 }
