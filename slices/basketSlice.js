@@ -12,7 +12,7 @@ export const basketSlice = createSlice({
       state.items = [...state.items, action.payload];
     },
     removeFromBasket: (state, action) => {
-      /* Petir. Try achieving same result with the filter method below. (Try-> worked.) */
+      /* Petir: */
       let newBasket = state.items.filter(
         (basketItem) => basketItem.id !== action.payload
       );
