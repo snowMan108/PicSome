@@ -5,9 +5,12 @@ import Head from "next/head";
 
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
+import { selectItems as selectFavoritedItems } from "../slices/favoritesSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function CheckoutBody() {
   const items = useSelector(selectItems);
+  const favoritedItems = useSelector(selectFavoritedItems);
   const itemCost = 5;
   return (
     <div>
@@ -38,6 +41,15 @@ function CheckoutBody() {
       )}
       {/* favorited items: */}
       <h1 className="font-semibold text-base mt-4 ml-3">Add some favorites?</h1>
+      <div className="flex flex-wrap">
+        {favoritedItems.map((item, i) => (
+          <LazyLoadImage
+            src={item.url}
+            key={i}
+            className="h-10 w-10"
+          ></LazyLoadImage>
+        ))}
+      </div>
     </div>
   );
 }
